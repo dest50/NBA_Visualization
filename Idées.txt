@@ -1,0 +1,60 @@
+Chaque graphique doit être associé à une question.
+ - D'où viennent les joueurs ?
+ - Quelles sont les différences entre les postes ?
+ - Comment se déroule un match en moyenne ?
+ - Lequel de ces joueurs est le plus fort ?
+ - Laquelle de ces équipes a les meilleures statistiques ?
+
+
+
+## Idées en vrac:
+ - PCA et Clustering
+ - Carte du monde avec le nb de joueurs par pays. D'où viennent les joueurs ?
+ - Correlation entre le taux de victoires d'une équipe et la taille moyenne des joueurs de l'équipe
+ - Faire un dashboard ou on clique sur les joueurs que l'on souhaite comparer
+ - Scrapper les hotzones des joueurs (ex : https://fr.global.nba.com/players/hotzones/#!/steven_adams)
+ - Radar plot sur les stats d'un joueur ou d'une équipe pour comparer plusieurs joueurs/équipes
+
+ - On a aussi des stats spécifiques à la defense => Graph score defense en fct du score attaque => Correlation négative ?
+ - Positions des joueurs : https://www.nba.com/players
+ - Distribution de la taille des joueurs de la nba et de la taille des hommes (dans la même tranche d'âge)
+
+
+
+
+# Objectif : Analyse des differents positions
+ - % de paniers à 3pts tentés en fct du poste (Dans stats players > scoring)
+ - Presicion des paniers à 3pts en fonction du poste
+ - Pourcentage des paniers 3PT/2PT de l'équipe réalisés par le joueur en fct du poste (Quel poste marque le plus de points en général ?)
+ - Proportion de buts mis en fct de la distance (courbe décroissante). Afficher une courbe de chaque couleur par poste different (https://towardsdatascience.com/interactive-basketball-data-visualizations-with-plotly-8c6916aaa59e)
+F : forward
+C : center
+G : guards
+
+
+# Objectif : Analyse du déroulement d'un match
+ - Liens à scrapper :
+	- https://www.nba.com/game/chi-vs-nyk-0022100328
+	- https://www.nba.com/game/chi-vs-nyk-0022100328/box-score (Trier par periodes)
+
+ - Graphiques :
+	- Points moyens par quart de match
+	- Essais 3pts moyens par quart de match
+	- Essais 3pts moyens match sérré vs match pas sérré
+	- Essais 3pts moyen en position de domination vs en position de grosse défaite
+	- Déroulement moyen d'un match : https://www.google.com/search?q=python+nba+analisis&rlz=1C1CHBF_frFR920FR920&sxsrf=AOaemvL-GByD634p_B4tjCPTKAjDbpU-bA:1638392721659&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiP6bTBwMP0AhWpxoUKHawmCbgQ_AUoAnoECAEQBA&biw=1280&bih=648&dpr=1.5#imgrc=r84f4wsT0z1pAM
+ - pour les timeseries calculées avec une moyenne, encadrer la courbe par des courbes de confiance (+- 1.96*std)
+
+
+
+# Liens interressants
+https://gitlab.com/jphwang/online_articles
+https://towardsdatascience.com/interactive-basketball-data-visualizations-with-plotly-8c6916aaa59e
+https://towardsdatascience.com/how-to-visualize-hidden-relationships-in-data-with-python-analysing-nba-assists-e480de59db50
+
+
+
+### PREDICTIONS :
+- Assigner un poste adapté à un joueur en fct de ses statistiques
+- Prédire le résultat d'un match à l'avance (en prédisant un "score" à chaque équipe)
+- Prédire le score final d'un match en fct du score à la mi-temps
