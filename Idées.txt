@@ -18,7 +18,7 @@ Chaque graphique doit être associé à une question.
  - On a aussi des stats spécifiques à la defense => Graph score defense en fct du score attaque => Correlation négative ?
  - Positions des joueurs : https://www.nba.com/players
  - Distribution de la taille des joueurs de la nba et de la taille des hommes (dans la même tranche d'âge)
-
+ - évaluer les effets de l’âge sur les performances pour différents postes chez les joueurs de Nba
 
 
 
